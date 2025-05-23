@@ -1,106 +1,108 @@
-/* Estilo geral */
+/* Paleta: 
+   Branco: #ffffff
+   Azul: #007bff
+   Laranja: #ff6f00
+   Azul claro: #e3f2fd
+   Laranja claro: #fff3e0
+*/
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  /* Container principal */
-  .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px; /* Espaço entre as colunas */
-  }
-  
-  /* Menu com botões à esquerda */
-  .menu {
-    width: 25%;
-    background-color: rgb(238, 46, 46);
-    padding: 20px;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .botao {
-    display: block;
-    text-decoration: none;
-    background-color: #4CAF50;
-    color: rgb(37, 255, 30);
-    padding: 15px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 10px;
-    transition: 0.3s;
-  }
-  
-  .botao:hover {
-    background-color: #45a049;
-  }
-  
-  /* Formulário para adicionar gincanas */
-  .formulario {
-    width: 48%;  /* Tamanho ajustado para caber ao lado da tabela */
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    display: none;
-  }
-  
-  .formulario input,
-  .formulario textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .formulario button {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  .formulario button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Tabela para exibição das gincanas */
-  .tabela {
-    width: 48%;  /* Tamanho ajustado para caber ao lado do formulário */
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    display: none;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  td {
-    background-color: #fafafa;
-  }
-  
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  color: #007bff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 8px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #ff6f00;
+  margin-bottom: 10px;
+}
+
+input, select {
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #ff6f00;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65100;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+ul li {
+  padding: 8px 12px;
+  background-color: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+#placar li {
+  background-color: #fff3e0;
+  border-color: #ffcc80;
+  font-weight: bold;
+}
+
+#podio {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+#podio li {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+#podio li:nth-child(1) {
+  background-color: gold;
+  color: black;
+}
+
+#podio li:nth-child(2) {
+  background-color: silver;
+  color: black;
+}
+
+#podio li:nth-child(3) {
+  background-color: #cd7f32; /* Bronze */
+  color: black;
+}
